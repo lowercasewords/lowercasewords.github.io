@@ -1,0 +1,21 @@
+#nav-box-closed {
+    height: 50px;
+    width: 50px;
+    background-color:darkblue
+}
+#nav-box-opened {
+    background-color: blueviolet;
+    min-height: 200px;
+    min-width: 200px;
+    max-height: 1000px;
+    max-width: 1000px;
+    /* border: 10px solid;
+    border-color: red; */
+}
+    #nav-box-opened #nav-box-opened-pseudo-border {
+        background-color: brown;
+        z-index: 1;
+    }
+body {
+    background-color: black;
+}
