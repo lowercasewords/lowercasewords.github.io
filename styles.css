@@ -1,0 +1,21 @@
+nav.primary-navbar {
+}
+nav.primary-navbar:first-child h3.navbar-title {
+  margin: 5px 20px 5px 20px;
+}
+
+nav.primary-navbar li.nav-item {
+  margin: 0px, 5px, 0px, 5px;
+}
+
+section.about-me {
+}
+
+section.previous-work {
+}
+
+section.projects-showcase {
+}
+
+section.contact-information {
+}
