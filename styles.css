@@ -54,17 +54,19 @@ nav.primary-navbar:first-child h3.navbar-title {
   margin: 5px 20px 5px 20px;
 }
 
-.experience-collection.carousel {
+.project-collection.carousel {
   min-height: 100px;
   /* background-color: var(--primary-accent); */
 }
 
-.experience-collection.carousel section.previous-work {
-  /* background-color: var(--secondary-color); */
-  min-height: 50%;
+.project-collection.carousel > button.carousel-control-prev,
+.project-collection.carousel > button.carousel-control-next {
+  max-width: fit-content;
+  /* background-color: var(--primary-color); */
+  color: var(--third-accent);
 }
-
-.experience-collection.carousel section.projects-showcase {
-  /* background-color: var(--secondary-accent); */
-  min-height: 50%;
+.project-collection.carousel > button.carousel-control-prev:hover,
+.project-collection.carousel > button.carousel-control-next:hover {
+  background-color: var(--third-color);
+  color: var(--third-accent);
 }
