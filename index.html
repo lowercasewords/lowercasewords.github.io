@@ -14,10 +14,11 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <nav
-      class="primary-navbar main-navbar navbar navbar-expand-md navbar-dark sticky-top major-content-container"
+      class="bg-dark bg-gradient primary-navbar main-navbar navbar navbar-expand-md navbar-dark sticky-top major-content-container"
     >
       <h3 class="navbar-title">Personal Website</h3>
       <button
@@ -53,7 +54,7 @@
         </ul>
       </div>
     </nav>
-    <main class="personal-contents">
+    <main class="personal-contents bg-gradient">
       <section
         id="lowercasewords-about-me major-content-container"
         class="about-me"
@@ -77,14 +78,24 @@
       <hr />
       <!-- Previous work -->
       <section id="lowercasewords-previous-work" class="previous-work">
-        <h2>Previous Work</h2>
-        <p>Here would be a summary of my prior work...</p>
+        <h2>Resume</h2>
+        <!-- Button to toggle PDF -->
+        <button class="expandButton">Hide Resume PDF</button>
+        <div class="expandArea">
+          <embed
+            class="resume"
+            src="files/Fall 2024 Resume.pdf"
+            width="1000"
+            height="1300"
+            type="application/pdf"
+          />
+        </div>
       </section>
       <hr />
       <!-- Projects showcased-->
       <section id="lowercasewords-projects-showcase" class="projects-showcase">
         <h2>Projects Showcase</h2>
-                <section
+        <section
           id="sectionCarousel"
           class="project-collection carousel slide"
           data-bs-ride="carousel"

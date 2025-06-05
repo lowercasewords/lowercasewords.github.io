@@ -54,6 +54,22 @@ nav.primary-navbar:first-child h3.navbar-title {
   margin: 5px 20px 5px 20px;
 }
 
+.expandButton {
+  min-width: fit-content;
+  min-height: fit-content;
+  background-color: var(--secondary-color);
+  color: var(--third-color);
+  border: 5px solid var(--primary-accent);
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+embed.resume {
+  margin: auto;
+  display: block;
+  border: 5px solid var(--primary-accent);
+}
+
 .project-collection.carousel {
   min-height: 100px;
   /* background-color: var(--primary-accent); */
