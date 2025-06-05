@@ -1,21 +1,70 @@
-nav.primary-navbar {
+:root {
+  --primary-color: #121212; /* black background */
+  --primary-accent: #1e1e1e; /* dark gray */
+  --secondary-color: #2f2f2f; /* soft dark */
+  --secondary-accent: #3a3a3a; /* light dark */
+  --third-color: #00adb5; /* cyan */
+  --third-accent: #eeeeee; /* white */
 }
-nav.primary-navbar:first-child h3.navbar-title {
-  margin: 5px 20px 5px 20px;
+
+body {
+  background-color: var(--primary-color) !important;
+  color: var(--third-accent) !important;
+}
+body > * {
+  padding: 0px 1% 0px 1%;
+}
+
+html,
+footer.contact-information {
+  background-color: var(--primary-accent);
+}
+
+.major-content-container {
+  margin-bottom: 25px;
+}
+
+footer.contact-information {
+  margin-top: 20px;
+}
+
+nav.primary-navbar {
+  background-color: var(--secondary-color);
+}
+
+nav.primary-navbar button.navbar-toggler {
 }
 
 nav.primary-navbar li.nav-item {
   margin: 0px, 5px, 0px, 5px;
+  height: 100%;
+}
+nav.primary-navbar h3 {
+  color: var(--third-color);
+}
+nav.primary-navbar a {
+  color: var(--third-accent);
+}
+nav.primary-navbar a:hover {
+  background-color: var(--primary-color);
+  color: var(--third-accent);
 }
 
-section.about-me {
+nav.primary-navbar:first-child h3.navbar-title {
+  margin: 5px 20px 5px 20px;
 }
 
-section.previous-work {
+.experience-collection.carousel {
+  min-height: 100px;
+  /* background-color: var(--primary-accent); */
 }
 
-section.projects-showcase {
+.experience-collection.carousel section.previous-work {
+  /* background-color: var(--secondary-color); */
+  min-height: 50%;
 }
 
-section.contact-information {
+.experience-collection.carousel section.projects-showcase {
+  /* background-color: var(--secondary-accent); */
+  min-height: 50%;
 }

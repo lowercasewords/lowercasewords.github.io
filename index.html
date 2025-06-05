@@ -10,12 +10,16 @@
       rel="stylesheet"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav
-      class="primary-navbar main-navbar navbar navbar-expand-md bg-dark navbar-dark sticky-top"
+      class="primary-navbar main-navbar navbar navbar-expand-md navbar-dark sticky-top major-content-container"
     >
-      <h3 class="navbar-title text-white">Personal Website</h3>
+      <h3 class="navbar-title">Personal Website</h3>
       <button
         class="navbar-toggler"
         type="button"
@@ -29,47 +33,103 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link text-white" href="#lowercase-about-me"
-              >About me</a
-            >
+            <a class="nav-link" href="#lowercase-about-me">About me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#lowercase-previous-work"
+            <a class="nav-link" href="#lowercase-previous-work"
               >Previous work</a
             >
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link text-white"
-              href="#lowercasewords-contact-information"
+            <a class="nav-link" href="#lowercasewords-contact-information"
               >Projects</a
             >
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link text-white"
-              href="#lowercasewords-contact-information"
+            <a class="nav-link" href="#lowercasewords-contact-information"
               >Contact</a
             >
           </li>
         </ul>
       </div>
     </nav>
-    <main>
-      <section id="lowercasewords-about-me" class="about-me"></section>
+    <main class="personal-contents">
       <section
-        id="lowercasewords-previous-work"
-        class="previous-work"
-      ></section>
+        id="lowercasewords-about-me major-content-container"
+        class="about-me"
+      >
+        <h2>About Me</h2>
+        <img
+          class="img"
+          src="images/artur.png"
+          width="200"
+          height="200"
+          alt="This is the image of Artur Agalarian, the creator of this webpage, information below is about me!"
+        />
+        <p>
+          My name is Artur Agalarian, and currently a full-time student at
+          Portland State University. As I'm finishing my third year of
+          undergraduate Computer Science course, I'm planning to dive into
+          hands-on learning on network cybersecurity tools, and participate in
+          CTF competitions.
+        </p>
+      </section>
+
       <section
-        id="lowercasewords-projects-showcase"
-        class="projects-showcase"
-      ></section>
-      <section
-        id="lowercasewords-contact-information"
-        class="contact-information"
-      ></section>
+        id="sectionCarousel"
+        class="experience-collection carousel slide major-content-container"
+        data-bs-ride="carousel"
+      >
+        <!-- Previous work slide -->
+        <section
+          id="lowercasewords-previous-work"
+          class="carousel-item previous-work"
+        >
+          <h2>Previous Work</h2>
+          <p>Here would be a summary of my prior work...</p>
+        </section>
+
+        <!-- Projects showcased slide -->
+        <section
+          id="lowercasewords-projects-showcase"
+          class="carousel-item active projects-showcase"
+        >
+          <h2>Projects Showcase</h2>
+          <p>Here would be a summary of my prior projects...</p>
+        </section>
+        <!-- left button for carousel -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#sectionCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <!-- right button for carousel -->
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#sectionCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </section>
     </main>
-    <footer></footer>
+    <footer id="lowercasewords-contact-information" class="contact-information">
+      <h2>Contact Information</h2>
+      <p>
+        My personal email:
+        <a href="king.artur.arv@gmail.com">king.artur.arv@gmail.com</a>
+      </p>
+      <p>
+        My Github page:
+        <a href="https://github.com/lowercasewords">lowercasewords</a>
+      </p>
+    </footer>
   </body>
 </html>
