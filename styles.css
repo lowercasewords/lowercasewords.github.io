@@ -17,32 +17,28 @@ body {
   background-color: var(--primary-color) !important;
   color: var(--third-accent) !important;
 }
-body > * {
-  padding: 0px 1% 0px 1%;
-}
-
 html,
-footer.contact-information {
+footer {
   background-color: var(--primary-accent);
+}
+main,
+footer {
+  padding: 0px 20px 0px 20px;
 }
 
 .major-content-container {
-  margin-bottom: 50px;
+  padding: 20px 5px 0px 5px;
 }
 
-.major-content-container h2.topic-subtitle {
-  margin: 0px 0px 30px 0px;
+.major-content-container .topic-subtitle {
+  margin: 5px 0px 30px 5px;
 }
-
-footer.contact-information {
-  margin-top: 20px;
+footer .major-content-container ul.list-of-contacts {
+  margin-left: 20px;
 }
 
 nav.primary-navbar {
   background-color: var(--secondary-color);
-}
-
-nav.primary-navbar button.navbar-toggler {
 }
 
 nav.primary-navbar h1.navbar-title {
