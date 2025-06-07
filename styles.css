@@ -29,6 +29,18 @@ footer {
 .major-content-container {
   padding: 20px 5px 0px 5px;
 }
+.about-me.major-content-container .about-me-contents {
+  display: flex;
+  justify-content: space-between;
+  /* flex-flow: row; */
+}
+.about-me.major-content-container .about-me-contents .left-side,
+.about-me.major-content-container .about-me-contents .right-side {
+  padding: 20px;
+}
+
+.about-me.major-content-container .about-me-contents img.about-me-selfie {
+}
 
 .major-content-container .topic-subtitle {
   margin: 5px 0px 30px 5px;
