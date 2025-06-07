@@ -7,6 +7,10 @@
   --third-accent: #eeeeee; /* white */
 
   --standard-border: 5px solid var(--primary-accent);
+  --link-color: var(--third-color);
+
+  --hover-background: var(--primary-color);
+  --hover-color: var(--third-accent);
 }
 
 body {
@@ -52,12 +56,12 @@ nav.primary-navbar li.nav-item {
 }
 
 nav.primary-navbar a {
-  color: var(--third-accent);
+  color: var(--link-color);
 }
 
 nav.primary-navbar a:hover {
-  background-color: var(--primary-color);
-  color: var(--third-accent);
+  background-color: var(--hover-background);
+  color: var(--hover-color);
 }
 
 .expandButton {
@@ -68,6 +72,10 @@ nav.primary-navbar a:hover {
   border: var(--standard-border);
   padding: 10px;
   margin-bottom: 50px;
+}
+.expandButton:hover {
+  background-color: var(--hover-background);
+  color: var(--hover-color);
 }
 
 embed.resume {
@@ -90,10 +98,17 @@ embed.resume {
 
 .project-collection.carousel .project h4.fancy-title {
   text-decoration: underline;
-  margin: 0px 0px 20px 20px;
+  margin: 0px 0px 20px 0px;
 }
 
-.project-collection.carousel .project .information {
+.project-collection.carousel .project .information,
+.project-collection.carousel .project .showcase {
+  margin: 0px 10px 0px 10px;
+}
+
+.project-collection.carousel .project .information p {
+  margin: 0px 0px 20px 20px;
+  display: inline-block;
 }
 
 .project-collection.carousel .project .showcase h3.name {
@@ -102,8 +117,25 @@ embed.resume {
   margin-bottom: 20px;
 }
 
+.project-collection.carousel .project .showcase h3.name a.project-title-link {
+  color: var(--link-color);
+  text-decoration: none;
+  padding: 15px;
+}
+
+.project-collection.carousel
+  .project
+  .showcase
+  h3.name
+  a.project-title-link:hover {
+  background-color: var(--hover-background);
+  color: var(--hover-color);
+}
+
 .project-collection.carousel .project .showcase img.project-icon {
   border: var(--standard-border);
+  margin: 30px auto 10px auto;
+  display: block;
 }
 
 .project-collection.carousel > button.carousel-control-prev,
@@ -112,13 +144,13 @@ embed.resume {
   max-width: 100px;
   margin: 0px 20px 0px 20px;
   /* background-color: var(--primary-color); */
-  color: var(--third-accent);
+  color: var(--link-color);
 }
 
 .project-collection.carousel > button.carousel-control-prev:hover,
 .project-collection.carousel > button.carousel-control-next:hover {
   background-color: var(--third-color);
-  color: var(--third-accent);
+  /* color: var(--third-accent); */
 }
 /* 
 .project-collection.carousel {

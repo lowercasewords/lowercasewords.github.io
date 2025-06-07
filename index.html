@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>lowercasewords - Personal Website</title>
+    <title>Artur Agalarian - Personal Website</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -34,10 +34,10 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#lowercase-about-me">About me</a>
+            <a class="nav-link" href="#lowercasewords-about-me">About me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#lowercase-previous-work"
+            <a class="nav-link" href="#lowercasewords-previous-work"
               >Previous work</a
             >
           </li>
@@ -113,35 +113,88 @@
             <div class="carousel-item active">
               <article class="project">
                 <div class="information">
-                  <h4 class="fancy-title">Description</h4>
-                  <p>
-                    An arcade styled gamed created within a single month for the
-                    local August GameJam showcase.
-                  </p>
-                  <p>
-                    It's a futuristic soccer game where the player is faced with
-                    the AI opponent; the player must score higher than the
-                    opponent in order to win the match
-                  </p>
-                  <h4 class="fancy-title">Itch.io</h4>
-                  <p>
-                    You're able to access the project by following this
-                    <a href="https://noodlestrudel.itch.io/stellnull-jetball"
-                      >link</a
-                    >
-                    (and the one in the title).
-                  </p>
+                  <div class="project-description">
+                    <h4 class="fancy-title">Description</h4>
+                    <p>
+                      Stellnull Jetball is an arcade styled gamed created within
+                      a single month for the local August GameJam showcase. I
+                      was the part of the 4-member group working on the project.
+                      Core attraction of the game revolved around the player's
+                      movement and ghost mechanics, giving an interesting spin
+                      to the standard sports formula.
+                    </p>
+                    <p>
+                      It's a futuristic 2D soccer game where the player is faced
+                      with the AI opponent; the player must score higher than
+                      the opponent in order to win the match. The game was made
+                      using
+                      <a href="https://godotengine.org/">Godot Game Engine</a>
+                      in about a month.
+                    </p>
+                    <p>
+                      The player was able to either move left-and-right on the
+                      surface, or perform a perpendicular jump; jumping allowed
+                      you to intercept the ball, but left you unable to move.
+                    </p>
+                    <p>
+                      Once the first round was finished, the ghost mechanic was
+                      activated, spawning the copies of both players that will
+                      interact with the match during the round. Ghosts are
+                      intangible to the actual players, but tangible to the
+                      ball. This mecanic allowed ghosts to create an interesting
+                      spin on the formula. Ghosts will reinact the movement of
+                      the previous round's player, effectively being a replay of
+                      the previous round while interacting with the current
+                      match by intercepting with the ball.
+                    </p>
+                  </div>
+                  <div class="project-participation">
+                    <h4 class="fancy-title">Participation</h4>
+                    <p>
+                      I was one of the programmers on the team. My primary
+                      objective was to model the behavior of the AI enemies in
+                      the game, as well as refactor the code to make developer
+                      friendly, and fix bugs. The team was great and very
+                      organized due to the GameJam month limit, giving me an
+                      opportunity to be a part of a development team. This also
+                      gave me experience in developing small games with Godot
+                      Game Engine, and I must mention that Godot is very
+                      intuitive and versitile.
+                    </p>
+                  </div>
+                  <div class="project-deployment">
+                    <h4 class="fancy-title">Itch.io</h4>
+                    <p>
+                      You're able to access and download the project by
+                      following this
+                      <a href="https://noodlestrudel.itch.io/stellnull-jetball"
+                        >itch.io</a
+                      >
+                      public project link (and the one in the title).
+                    </p>
+                  </div>
                 </div>
                 <div class="showcase">
                   <h3 class="name">
-                    <a href="https://noodlestrudel.itch.io/stellnull-jetball"
+                    <a
+                      class="project-title-link"
+                      href="https://noodlestrudel.itch.io/stellnull-jetball"
                       >Stellnull Jetball</a
                     >
                   </h3>
                   <img
+                    width="500px"
+                    height="300px"
                     class="project-icon"
-                    src="images/StellNull.png"
-                    alt="Stellnull Jetball image"
+                    src="images/StellNullTitle.png"
+                    alt="GameJam project iamge: Stellnull Jetball game cover"
+                  />
+                  <img
+                    width="500px"
+                    height="300px"
+                    class="project-icon"
+                    src="images/StellNullGamePlay.png"
+                    alt="GameJam project iamge: Stellnull Jetball actual gameplay screenshot"
                   />
                 </div>
               </article>
