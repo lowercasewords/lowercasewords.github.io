@@ -1,6 +1,6 @@
 let attach_collapse = () => {
-  const expand_button = document.querySelector("button.expandButton");
-  const expand_area = document.querySelector("div.expandArea");
+  const expand_button = document.querySelector("button.expand-button");
+  const expand_area = document.querySelector("div.expand-area");
   expand_button.textContent = "Hide Resume PDF";
   expand_area.style.display = "none";
   expand_button.addEventListener("click", () => {

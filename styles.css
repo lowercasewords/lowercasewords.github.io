@@ -72,7 +72,7 @@ nav.primary-navbar a:hover {
   color: var(--hover-color);
 }
 
-.expandButton {
+.expand-button {
   min-width: fit-content;
   min-height: fit-content;
   background-color: var(--secondary-color);
@@ -81,7 +81,7 @@ nav.primary-navbar a:hover {
   padding: 10px;
   margin-bottom: 50px;
 }
-.expandButton:hover {
+.expand-button:hover {
   background-color: var(--hover-background);
   color: var(--hover-color);
 }
@@ -186,5 +186,9 @@ embed.resume {
   }
   .major-content-container.projects-showcase .project {
     flex-direction: column-reverse;
+  }
+
+  .expand-area embed.resume {
+    width: 100vw;
   }
 }
