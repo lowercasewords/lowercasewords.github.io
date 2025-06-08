@@ -32,14 +32,10 @@ footer {
 .about-me.major-content-container .about-me-contents {
   display: flex;
   justify-content: space-between;
-  /* flex-flow: row; */
 }
 .about-me.major-content-container .about-me-contents .left-side,
 .about-me.major-content-container .about-me-contents .right-side {
   padding: 20px;
-}
-
-.about-me.major-content-container .about-me-contents img.about-me-selfie {
 }
 
 .major-content-container .topic-subtitle {
@@ -159,12 +155,18 @@ embed.resume {
 .project-collection.carousel > button.carousel-control-prev:hover,
 .project-collection.carousel > button.carousel-control-next:hover {
   background-color: var(--third-color);
-  /* color: var(--third-accent); */
 }
-/* 
-.project-collection.carousel {
-  max-height: 200px;
-} */
+
+.contact-information.major-content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact-information.major-content-container .left-side,
+.contact-information.major-content-container .right-side {
+  width: fit-content;
+}
 
 @media (max-width: 1000px) {
   .major-content-container .topic-subtitle {

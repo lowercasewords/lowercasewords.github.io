@@ -379,29 +379,130 @@
         id="lowercasewords-contact-information"
         class="contact-information major-content-container"
       >
-        <h2 class="topic-subtitle">Contact Information</h2>
-        <ol class="list-of-contacts">
-          <li>
-            <p>
-              My personal email:
-              <a href="king.artur.arv@gmail.com">king.artur.arv@gmail.com</a>
-            </p>
-          </li>
-          <li>
-            <p>
-              My Github page:
-              <a href="https://github.com/lowercasewords">lowercasewords</a>
-            </p>
-          </li>
-          <li>
-            <p>
-              My itch.io account:
-              <a href="https://itch.io/profile/lowercasewords"
-                >lowercasewords</a
+        <div class="left-side">
+          <h2 class="topic-subtitle">Contact Information</h2>
+          <ol class="list-of-contacts">
+            <li>
+              <p>
+                My personal email:
+                <a href="king.artur.arv@gmail.com">king.artur.arv@gmail.com</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                My Github page:
+                <a href="https://github.com/lowercasewords">lowercasewords</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                My itch.io account:
+                <a href="https://itch.io/profile/lowercasewords"
+                  >lowercasewords</a
+                >
+              </p>
+            </li>
+          </ol>
+        </div>
+        <div class="right-side">
+          <form class="contact-me-form" method="get">
+            <h2>Contact me!</h2>
+            <br />
+            <div>
+              <label for="contact-me-name">Your name:</label>
+              <input
+                type="text"
+                id="contact-me-name"
+                name="name"
+                placeholder="Full Name"
+              />
+              <br />
+              <label for="contact-me-email">Your email:</label>
+              <input
+                type="email"
+                id="contact-me-email"
+                name="email"
+                placeholder="dummy@gmail.com"
+              />
+            </div>
+            <br />
+            <fieldset>
+              <legend>What would you like to be discussed?</legend>
+              <input
+                type="radio"
+                id="contact-me-educational-topic"
+                name="discussion-topic"
+                value="educational"
+              />
+              <label for="contact-me-educational-topic"
+                >Educational topics</label
               >
-            </p>
-          </li>
-        </ol>
+              <br />
+              <input
+                type="radio"
+                id="contact-me-professional-topic"
+                name="discussion-topic"
+                value="professional"
+              />
+              <label for="contact-me-professional-topic"
+                >Professional topics</label
+              >
+              <br />
+              <input
+                type="radio"
+                id="contact-me-personal-topic"
+                name="discussion-topic"
+                value="personal"
+              />
+              <label for="contact-me-personal-topic">Personal topics</label>
+              <br />
+              <input
+                type="radio"
+                id="contact-me-other"
+                name="discussion-topic"
+                value="other"
+              />
+              <label for="contact-me-other">Other</label>
+            </fieldset>
+            <br />
+            <fieldset>
+              <legend>Have we met before?</legend>
+              <br />
+              <input
+                type="checkbox"
+                id="contact-me-yes-personally"
+                name="have-we-met"
+                value="yes-personally"
+              />
+              <label for="contact-me-yes-personally"
+                >Yes, I know you personally</label
+              >
+              <br />
+              <input
+                type="checkbox"
+                id="contact-me-yes-barely"
+                name="have-we-met"
+                value="yes-barely"
+              />
+              <label for="contact-me-yes-barely"
+                >Yes, we've met once or twice</label
+              >
+              <br />
+              <input
+                type="checkbox"
+                id="contact-me-no-never"
+                name="have-we-met"
+                value="no-never"
+              />
+              <label for="contact-me-no-never">No, we never met before</label>
+            </fieldset>
+            <br />
+            <div>
+              <input type="submit" value="Submit" />
+              <input type="reset" value="Reset" />
+            </div>
+          </form>
+        </div>
       </section>
     </footer>
   </body>
