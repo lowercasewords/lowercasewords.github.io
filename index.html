@@ -432,7 +432,7 @@
                 type="radio"
                 id="contact-me-educational-topic"
                 name="discussion-topic"
-                value="educational"
+                value="Educational"
               />
               <label for="contact-me-educational-topic"
                 >Educational topics</label
@@ -442,7 +442,7 @@
                 type="radio"
                 id="contact-me-professional-topic"
                 name="discussion-topic"
-                value="professional"
+                value="Professional"
               />
               <label for="contact-me-professional-topic"
                 >Professional topics</label
@@ -452,7 +452,7 @@
                 type="radio"
                 id="contact-me-personal-topic"
                 name="discussion-topic"
-                value="personal"
+                value="Personal"
               />
               <label for="contact-me-personal-topic">Personal topics</label>
               <br />
@@ -460,7 +460,7 @@
                 type="radio"
                 id="contact-me-other"
                 name="discussion-topic"
-                value="other"
+                value="Other"
               />
               <label for="contact-me-other">Other</label>
             </fieldset>
@@ -470,31 +470,47 @@
               <br />
               <input
                 type="checkbox"
-                id="contact-me-yes-personally"
+                id="contact-met-in-person"
                 name="have-we-met"
-                value="yes-personally"
+                value="Met in person"
               />
-              <label for="contact-me-yes-personally"
-                >Yes, I know you personally</label
-              >
+              <label for="contact-met-in-person">We've met in person</label>
               <br />
               <input
                 type="checkbox"
-                id="contact-me-yes-barely"
+                id="contact-online"
                 name="have-we-met"
-                value="yes-barely"
+                value="Online"
               />
-              <label for="contact-me-yes-barely"
-                >Yes, we've met once or twice</label
-              >
+              <label for="contact-online">We've interacted online </label>
               <br />
               <input
                 type="checkbox"
-                id="contact-me-no-never"
+                id="contact-through-friend"
                 name="have-we-met"
-                value="no-never"
+                value="Through a friend"
               />
-              <label for="contact-me-no-never">No, we never met before</label>
+              <label for="contact-through-friend">
+                We were introduced through someone else
+              </label>
+              <br />
+              <input
+                type="checkbox"
+                id="contact-seen-work"
+                name="have-we-met"
+                value="Seen my work"
+              />
+              <label for="contact-seen-work"
+                >I’ve seen your work or projects
+              </label>
+              <br />
+              <input
+                type="checkbox"
+                id="contact-no-never"
+                name="have-we-met"
+                value="Never met"
+              />
+              <label for="contact-no-never">No, we've never met </label>
             </fieldset>
             <br />
             <div>
@@ -502,6 +518,13 @@
               <input type="reset" value="Reset" />
             </div>
           </form>
+        </div>
+        <div class="popup-section-container">
+          <div class="popup-section">
+            <h3 class="summary-title">Form summary</h3>
+            <div class="form-contents"></div>
+            <button class="close-popup-button">Close pop-out</button>
+          </div>
         </div>
       </section>
     </footer>
