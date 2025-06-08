@@ -165,3 +165,26 @@ embed.resume {
 .project-collection.carousel {
   max-height: 200px;
 } */
+
+@media (max-width: 1000px) {
+  .major-content-container .topic-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }
+  .major-content-container.projects-showcase {
+    align-items: center;
+  }
+
+  .major-content-container.about-me .about-me-contents,
+  .major-content-container.previous-work .resume,
+  .major-content-container.projects-showcase .project,
+  .major-content-container.contact-information {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .major-content-container.projects-showcase .project {
+    flex-direction: column-reverse;
+  }
+}
