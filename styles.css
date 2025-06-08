@@ -20,10 +20,12 @@ body {
   background-color: var(--primary-color) !important;
   color: var(--third-accent) !important;
 }
+
 html,
 footer {
   background-color: var(--primary-accent);
 }
+
 main,
 footer {
   padding: 0px 20px 20px 20px;
@@ -32,10 +34,12 @@ footer {
 .major-content-container {
   padding: 20px 5px 0px 5px;
 }
+
 .about-me.major-content-container .about-me-contents {
   display: flex;
   justify-content: space-between;
 }
+
 .about-me.major-content-container .about-me-contents .left-side,
 .about-me.major-content-container .about-me-contents .right-side {
   padding: 20px;
@@ -93,8 +97,15 @@ embed.resume {
 
 .project-collection.carousel {
   min-height: 500px;
+  display: flex;
+}
+.project-collection.carousel > * {
+  margin: 0 0.5rem;
+}
 
-  /* background-color: var(--primary-accent); */
+.project-collection.carousel .carousel-inner {
+  width: 80%;
+  margin: auto;
 }
 
 .project-collection.carousel .project {
@@ -111,7 +122,6 @@ embed.resume {
 .project-collection.carousel .project .information,
 .project-collection.carousel .project .showcase {
   margin: 0px 10px 0px 10px;
-  /* min-width: 300px; */
 }
 
 .project-collection.carousel .project .information p {
@@ -146,18 +156,20 @@ embed.resume {
   display: block;
 }
 
-.project-collection.carousel > button.carousel-control-prev,
-.project-collection.carousel > button.carousel-control-next {
+.project-collection.carousel button.carousel-control {
+  background-color: var(--secondary-accent);
   min-width: fit-content;
   max-width: 100px;
   margin: 0px 20px 0px 20px;
-  /* background-color: var(--primary-color); */
-  color: var(--link-color);
+  color: var(--third-accent);
+  border: var(--standard-border);
+  display: inline-block;
 }
 
-.project-collection.carousel > button.carousel-control-prev:hover,
-.project-collection.carousel > button.carousel-control-next:hover {
-  background-color: var(--third-color);
+.project-collection.carousel button.carousel-control:hover {
+  border: 2px solid var(--third-color);
+  background-color: var(--hover-background);
+  color: var(--hover-color);
 }
 
 .contact-information.major-content-container {
@@ -170,11 +182,6 @@ embed.resume {
 .contact-information.major-content-container .right-side {
   width: fit-content;
 }
-
-/* footer .popup-section-container {
-  display: none;
-  position: absolute;
-} */
 
 footer .popup-section-container {
   display: none;
@@ -201,8 +208,6 @@ footer .popup-section-container .popup-section h3.summary-title {
 }
 
 footer .popup-section-container .popup-section .close-popup-button {
-  /* max-width: 60px;
-  max-height: 60px; */
   background-color: var(--primary-accent);
   color: var(--link-color);
   border: var(--standard-border);
@@ -233,6 +238,12 @@ footer .popup-section .close-popup-button:hover {
   }
   .major-content-container.projects-showcase .project {
     flex-direction: column-reverse;
+  }
+
+  .project-collection.carousel .project .showcase img.project-icon,
+  .project-collection.carousel .project .information {
+    width: 80%;
+    height: 80%;
   }
 
   .expand-area embed.resume {

@@ -141,12 +141,23 @@
         class="projects-showcase major-content-container"
       >
         <h2 class="topic-subtitle">Projects Showcase</h2>
+
         <div
           id="sectionCarousel"
           class="project-collection carousel slide"
           data-bs-ride="carousel"
           data-bs-interval="false"
         >
+          <!-- Left carousel button -->
+          <button
+            class="carousel-control carousel-control-prev"
+            type="button"
+            data-bs-target="#sectionCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
           <!-- Inner container for carousel items -->
           <div class="carousel-inner">
             <!-- Carousel item -->
@@ -349,21 +360,9 @@
               </article>
             </div>
           </div>
-
-          <!-- Left button -->
+          <!-- Right carousel button -->
           <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#sectionCarousel"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-
-          <!-- Right button -->
-          <button
-            class="carousel-control-next"
+            class="carousel-control carousel-control-next"
             type="button"
             data-bs-target="#sectionCarousel"
             data-bs-slide="next"
@@ -411,6 +410,7 @@
             <div>
               <label for="contact-me-name">Your name:</label>
               <input
+                required
                 type="text"
                 id="contact-me-name"
                 name="name"
@@ -419,6 +419,7 @@
               <br />
               <label for="contact-me-email">Your email:</label>
               <input
+                required
                 type="email"
                 id="contact-me-email"
                 name="email"
