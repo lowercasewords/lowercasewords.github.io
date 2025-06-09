@@ -84,15 +84,22 @@ nav.primary-navbar a:hover {
   padding: 10px;
   margin-bottom: 50px;
 }
+
 .expand-button:hover {
   background-color: var(--hover-background);
   color: var(--hover-color);
 }
 
-embed.resume {
+.resume .expand-area embed.resume-file {
   margin: auto;
   display: block;
   border: var(--standard-border);
+}
+
+.resume .expand-area .pdf-not-showing {
+  margin: 20px;
+  width: fit-content;
+  margin: 20px auto 20px auto;
 }
 
 .project-collection.carousel {
@@ -114,7 +121,7 @@ embed.resume {
   padding: 25px;
 }
 
-.project-collection.carousel .project h4.fancy-title {
+.project-collection.carousel .project .fancy-title {
   text-decoration: underline;
   margin: 0px 0px 20px 0px;
 }
@@ -133,21 +140,6 @@ embed.resume {
   max-width: fit-content;
   margin: auto;
   margin-bottom: 20px;
-}
-
-.project-collection.carousel .project .showcase h3.name a.project-title-link {
-  color: var(--link-color);
-  text-decoration: none;
-  padding: 15px;
-}
-
-.project-collection.carousel
-  .project
-  .showcase
-  h3.name
-  a.project-title-link:hover {
-  background-color: var(--hover-background);
-  color: var(--hover-color);
 }
 
 .project-collection.carousel .project .showcase img.project-icon {
@@ -181,6 +173,13 @@ embed.resume {
 .contact-information.major-content-container .left-side,
 .contact-information.major-content-container .right-side {
   width: fit-content;
+}
+
+footer
+  .contact-information.major-content-container
+  ol.list-of-contacts
+  a.contact-link {
+  color: var(--link-color);
 }
 
 footer .popup-section-container {
@@ -246,7 +245,7 @@ footer .popup-section .close-popup-button:hover {
     height: 80%;
   }
 
-  .expand-area embed.resume {
+  .expand-area embed.resume-file {
     width: 100vw;
   }
 }
